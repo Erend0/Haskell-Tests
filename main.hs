@@ -34,4 +34,13 @@ returnOdds :: [Int] -> [Int]
 returnOdds x = filter isOdd x
 
 -- Create a function that takes 3 individual string inputs and processes the following operations (in this order):  takes the head of that list, prepends "this is the start: " to this head (using the CONCAT function), appends " - and that is the end!" to this head (using an operator)
-processStrings s1 s2 s3 =   "This is the start: " ++ head[s1,s2,s3]  ++ " that is the end"
+processStrings s1 s2 s3 =   "This is the start: " ++ head[s1,s2,s3]  ++ " this is the end"
+
+-- Create a function that takes a list of (sub)lists of integers and returns a list of the lengths of each (sub)list 
+getlenofall :: [[Int]] -> [Int]
+getlenofall x = map length x
+
+-- Create a function that takes a list of strings and returns all strings apart from the first string.
+allbutlast :: [String] -> [String]
+allbutlast x = tail x
+
